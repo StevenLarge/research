@@ -1,0 +1,16 @@
+README
+
+In order to get the outputs to write in the correct place you need directories:
+
+Output
+AutoCorrelation
+
+The primary files to run are:
+
+WorkVariancePrimary.py. -> This runs a constant velocity protocol for a number of different protocol times and find the variance in all of the works calculated
+
+FrictionTestPrimary -> This simulates a trajectory at a fixed control parameter value and then finds the friction tensor (both the generalized friction and the new metric)
+
+
+
+
