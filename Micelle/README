@@ -1,0 +1,33 @@
+	Notes for correlation program
+
+	This program calculates the correlation function between two variables where the data (.dat) files are of the format:
+
+	step	value
+	0		x1
+	1		x2
+	2		x3
+	.		.
+	.		.
+	.		.
+
+	where the titles are not part of the file and the values are of type double.
+	
+	Input parameters are contained in the correlation_input file:
+
+******************************INPUT PARAMETERS****************************************
+
+	input_1			-->	This is the first input file
+	input_2			--> This is the second input file
+	
+	start_time		--> This is the point in the data file where the calculation of the correlation begins (so if there is an initial equilibration, this can be neglected)
+	end_time		--> The point in the data point where the program stops calculating the averages
+	
+	tau_time		--> The length of time steps over which the correlation is calculated
+	
+	output_file		--> This outputs a data file with two columns, the correlation time (in the first column) and the correlation value (in the second column)
+	
+*******************************NOTES***********************************************
+	
+	-To calculate the autocorrelation function of a parameter, just put the same input file for both input_1 and input_2
+	
+	-The output file is given as corr.exe after the Makefile

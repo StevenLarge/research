@@ -1,0 +1,11 @@
+Input_Parameters_for_Correlation
+
+input_1= free_energy.dat
+input_2= free_energy.dat
+
+start_time= 20000
+end_time= 	100000
+
+tau_time= 100
+
+output_file= correlation.dat
